@@ -4,6 +4,6 @@ cd %~dp0
 cd ..
 cd trade
 python trade_service.py
-echo ------交易服务已启动，请不要关闭------
+echo ------Trading service has started, please do not close------
 pause
 exit

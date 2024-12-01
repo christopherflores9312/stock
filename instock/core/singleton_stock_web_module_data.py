@@ -14,7 +14,7 @@ class stock_web_module_data(metaclass=singleton_type):
         _data = {}
         self.data_list = [wmd.web_module_data(
             mode="query",
-            type="综合选股",
+            type="Comprehensive Stock Selection",
             ico="fa fa-desktop",
             name=tbs.TABLE_CN_STOCK_SELECTION['cn'],
             table_name=tbs.TABLE_CN_STOCK_SELECTION['name'],
@@ -26,7 +26,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_SPOT['cn'],
             table_name=tbs.TABLE_CN_STOCK_SPOT['name'],
@@ -38,7 +38,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_FUND_FLOW['cn'],
             table_name=tbs.TABLE_CN_STOCK_FUND_FLOW['name'],
@@ -62,7 +62,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_TOP['cn'],
             table_name=tbs.TABLE_CN_STOCK_TOP['name'],
@@ -74,7 +74,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_BLOCKTRADE['cn'],
             table_name=tbs.TABLE_CN_STOCK_BLOCKTRADE['name'],
@@ -86,7 +86,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_FUND_FLOW_INDUSTRY['cn'],
             table_name=tbs.TABLE_CN_STOCK_FUND_FLOW_INDUSTRY['name'],
@@ -97,7 +97,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `fund_amount` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_STOCK_FUND_FLOW_CONCEPT['cn'],
             table_name=tbs.TABLE_CN_STOCK_FUND_FLOW_CONCEPT['name'],
@@ -108,7 +108,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `fund_amount` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票基本数据",
+            type="Stock Basic Data",
             ico="fa fa-book",
             name=tbs.TABLE_CN_ETF_SPOT['cn'],
             table_name=tbs.TABLE_CN_ETF_SPOT['name'],
@@ -118,7 +118,7 @@ class stock_web_module_data(metaclass=singleton_type):
             is_realtime=True
         ), wmd.web_module_data(
             mode="query",
-            type="股票指标数据",
+            type="Stock Indicator Data",
             ico="fa fa-indent",
             name=tbs.TABLE_CN_STOCK_INDICATORS['cn'],
             table_name=tbs.TABLE_CN_STOCK_INDICATORS['name'],
@@ -130,7 +130,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票指标数据",
+            type="Stock Indicator Data",
             ico="fa fa-indent",
             name=tbs.TABLE_CN_STOCK_INDICATORS_BUY['cn'],
             table_name=tbs.TABLE_CN_STOCK_INDICATORS_BUY['name'],
@@ -142,7 +142,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票指标数据",
+            type="Stock Indicator Data",
             ico="fa fa-indent",
             name=tbs.TABLE_CN_STOCK_INDICATORS_SELL['cn'],
             table_name=tbs.TABLE_CN_STOCK_INDICATORS_SELL['name'],
@@ -154,7 +154,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票K线形态",
+            type="Stock K-Line Patterns",
             ico="fa fa-tag",
             name=tbs.TABLE_CN_STOCK_KLINE_PATTERN['cn'],
             table_name=tbs.TABLE_CN_STOCK_KLINE_PATTERN['name'],
@@ -166,7 +166,7 @@ class stock_web_module_data(metaclass=singleton_type):
             order_by=" `cdatetime` DESC"
         ), wmd.web_module_data(
             mode="query",
-            type="股票策略数据",
+            type="Stock Strategy Data",
             ico="fa fa-check-square-o",
             name=tbs.TABLE_CN_STOCK_SPOT_BUY['cn'],
             table_name=tbs.TABLE_CN_STOCK_SPOT_BUY['name'],
@@ -182,7 +182,7 @@ class stock_web_module_data(metaclass=singleton_type):
             self.data_list.append(
                 wmd.web_module_data(
                     mode="query",
-                    type="股票策略数据",
+                    type="Stock Strategy Data",
                     ico="fa fa-check-square-o",
                     name=table['cn'],
                     table_name=table['name'],

@@ -167,11 +167,14 @@ def fetch_stocks_bonus(date):
 
 # 股票近三月上龙虎榜且必须有2次以上机构参与的
 def fetch_stock_top_entity_data(date):
+    # Calculate the start date by subtracting 90 days from the given date
     run_date = date + datetime.timedelta(days=-90)
-    start_date = run_date.strftime("%Y%m%d")
-    end_date = date.strftime("%Y%m%d")
-    code_name = '代码'
-    entity_amount_name = '买方机构数'
+    start_date = run_date.strftime("%Y%m%d")  # Format start date as YYYYMMDD
+    end_date = date.strftime("%Y%m%d")  # Format end date as YYYYMMDD
+    
+    # Define the column names for stock code and the number of buying institutions
+    code_name = 'Code'
+    entity_amount_name = 'Number of Buying Institutions'
     try:
         data = sle.stock_lhb_jgmmtj_em(start_date, end_date)
         if data is None or len(data.index) == 0:
